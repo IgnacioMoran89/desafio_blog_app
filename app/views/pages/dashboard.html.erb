@@ -1,19 +1,25 @@
 <h1>Crea tu Post</h1>
 
 <form method="get" action="create" id="create_post">
-    <div>
-        <input name="title">
+
+    <div class="form-group">
+        <label for="title">Titulo</label>
+        <input name= "title" type="text" class="form-control" id="title" ariadescribedby="
+        emailHelp" placeholder="">
     </div>
-    <br>
-    <div>
-        <input name="content">
+
+    <div class="form-group">
+        <label for="content">Contenido</label>
+        <textarea name="content" class="form-control"> </textarea>
     </div>
-    <br>
-    <div>
-        <input name="image_url">
+
+    <div class="form-group">
+        <label for="image_url">Imagen</label>
+        <input name= "image_url" type="image_url" class="form-control" id="image_url" ariadescribedby="
+        emailHelp" placeholder="">
     </div>
-    <br>
-    <div>
-        <input type="submit" value="Enviar">
-    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+    
 </form>
