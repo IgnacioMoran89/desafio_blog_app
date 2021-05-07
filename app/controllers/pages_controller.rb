@@ -10,6 +10,11 @@ class PagesController < ApplicationController
     @post = Post.new
   end
   
+
   def create
-  end 
+      @post = Post.create(title: params[:title],
+      content: params[:content],
+      image_url: params[:image_url])   
+  end
+  
 end
